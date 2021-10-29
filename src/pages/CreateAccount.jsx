@@ -1,11 +1,11 @@
 import React from "react";
+import "../styles/CreateAccount.scss";
 
 const CreateAccount = () => {
   return (
-    <div className="login">
-      <div className="form-conteiner">
+    <div className="CreateAccount">
+      <div className="CreateAccount-container">
         <h1 className="title">My account</h1>
-
         <form action="/" className="form">
           <div>
             <label for="name" className="label">
@@ -14,12 +14,11 @@ const CreateAccount = () => {
             <input
               type="text"
               id="name"
-              placeholder="Fidel"
+              placeholder="Teff"
               className="input input-name"
             />
-
             <label for="email" className="label">
-              Email address
+              Email
             </label>
             <input
               type="text"
@@ -27,18 +26,16 @@ const CreateAccount = () => {
               placeholder="platzi@example.com"
               className="input input-email"
             />
-
             <label for="password" className="label">
               Password
             </label>
             <input
               type="password"
-              id="new-password"
+              id="password"
               placeholder="*********"
               className="input input-password"
             />
           </div>
-
           <input
             type="submit"
             value="Create"

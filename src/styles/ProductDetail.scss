@@ -1,12 +1,12 @@
 @use "vars";
 
-.product-detail {
+.ProductDetail {
   width: 360px;
   padding-bottom: 24px;
   position: absolute;
   right: 0;
 }
-.product-detail-close {
+.ProductDetail-close {
   background: var(--white);
   width: 14px;
   height: 14px;
@@ -17,56 +17,17 @@
   padding: 12px;
   border-radius: 50%;
 }
-.product-detail > img:nth-child(2) {
+.ProductDetail-close:hover {
+  cursor: pointer;
+}
+.ProductDetail > img:nth-child(2) {
   width: 100%;
   height: 360px;
   object-fit: cover;
   border-radius: 0 0 20px 20px;
 }
-.product-info {
-  margin: 24px 24px 0 24px;
-  display: flex;
-  flex-direction: column;
-}
-.product-info p:nth-child(1) {
-  font-weight: bold;
-  font-size: var(--md);
-  margin-bottom: 4px;
-  margin-top: 0;
-}
-.product-info p:nth-child(2) {
-  color: var(--very-light-pink);
-  font-size: var(--md);
-  margin-bottom: 36px;
-  margin-top: 0;
-}
-.product-info p:nth-child(3) {
-  color: var(--very-light-pink);
-  font-size: var(--sm);
-  margin-bottom: 36px;
-  margin-top: 0;
-}
-.product-detail-close:hover {
-  cursor: pointer;
-}
-.primary-button {
-  background-color: var(--hospital-green);
-  border-radius: 8px;
-  border: none;
-  color: whitesmoke;
-  width: 100%;
-  cursor: pointer;
-  font-size: var(--md);
-  font-weight: bold;
-  height: 50px;
-}
-.add-to-card-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 @media (max-width: 640px) {
-  .product-detail {
+  .ProductDetail {
     width: 100%;
   }
 }

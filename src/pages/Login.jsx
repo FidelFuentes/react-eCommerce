@@ -1,14 +1,13 @@
 import React from "react";
-import "../styles/SignUp.scss";
+import "../styles/Login.scss";
 
-const SingUp = () => {
+const Login = () => {
   return (
-    <div className="login">
-      <div className="form-container">
+    <div className="Login">
+      <div className="Login-container">
         <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
-
         <form action="/" className="form">
-          <label for="email" className="label">
+          <label htmlFor="email" className="label">
             Email address
           </label>
           <input
@@ -17,8 +16,7 @@ const SingUp = () => {
             placeholder="platzi@example.cm"
             className="input input-email"
           />
-
-          <label for="password" className="label">
+          <label htmlFor="password" className="label">
             Password
           </label>
           <input
@@ -27,7 +25,6 @@ const SingUp = () => {
             placeholder="*********"
             className="input input-password"
           />
-
           <input
             type="submit"
             value="Log in"
@@ -35,11 +32,10 @@ const SingUp = () => {
           />
           <a href="/">Forgot my password</a>
         </form>
-
         <button className="secondary-button signup-button">Sign up</button>
       </div>
     </div>
   );
 };
 
-export default SingUp;
+export default Login;
